@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: rgba(0, 0, 139, 0.815);
+  margin: auto 0;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 32px;
+  font-style: italic;
+  padding: 12px;
+}
+
+.menu li {
+  float: left;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section .sobre {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .sobre img {
+  max-width: 400px;
+  height: 400px;
+  margin-right: 24px;
+}
+
+section .sobre h2,
+section .produtos > h2 {
+  color: royalblue;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid rgb(46, 90, 221);
+  font-style: italic;
+}
+
+section .produto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+section .produto img {
+  max-width: 200px;
+  height: 200px;
+  padding: 8px;
+  align-items: center;
+}
+
+section .produto a {
+  text-decoration: none;
+  cursor: default;
+  width: 100%;
+  padding: 8px;
+  text-align: start;
+}
+
+section .produto h2 {
+  color: #000;
+  font-size: 26px;
+  margin-bottom: 24px;
+}
+
+section .produto p {
+  color: #5c5c5c;
+  margin-bottom: 18px;
+}
+
+section .produto button {
+  width: 100%;
+  padding: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  background-color: rgb(46, 90, 221);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 640px) and (min-width: 390px){
+  .container {
+    max-width: 640px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    width: 100px;
+    color: #fff;
+    font-size: 36px;
+    font-style: italic;
+    padding: 12px;
+    margin-left: 30px;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 100px;
+  }
+
+  .menu li a {
+    font-size: 22px;
+  }
+
+  header .container {
+    max-width: 640px;
+  }
+
+  section .sobre {
+    max-width: 640px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  section .sobre p {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+    align-items: center;
+  }
+
+  section .sobre img {
+    max-width: 600px;
+    height: 600px;
+    padding: 8px;
+    margin: 16px auto;
+    align-items: center;
+  }
+
+  section .sobre h2,
+  section .produto > h2 {
+    color: royalblue;
+    padding-bottom: 12px;
+    margin: auto 20px;
+    border-bottom: 2px solid rgb(46, 90, 221);
+    font-style: italic;
+  }
+
+  section .produto {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 90%);
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .produto img {
+    max-width: 650px;
+    height: 450px;
+    margin: 8px;
+  }
+
+  section article a {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 1023px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header .container {
+    max-width: 1023px;
+  }
+
+  header h1 {
+    color: #fff;
+    font-size: 36px;
+    font-style: italic;
+    padding: 12px;
+    margin-left: 30px;
+  }
+
+  .menu ul {
+    list-style: none;
+    margin-right: 100px;
+  }
+
+  section .sobre,
+  section .produtos {
+    max-width: 1023px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
+
+  section .sobre h2,
+  section .produto > h2,
+  section .produtos > h2 {
+    color: royalblue;
+    padding-bottom: 12px;
+    margin: auto 20px;
+    border-bottom: 2px solid rgb(46, 90, 221);
+    font-style: italic;
+  }
+
+
+  section .sobre p {
+    display: flex;
+    padding: 20px;
+    text-align: justify;
+    align-items: center;
+  }
+
+  section .sobre img {
+    max-width: 600px;
+    height: 600px;
+    padding: 8px;
+    margin: 16px auto;
+    align-items: center;
+  }
+
+  section .produto {
+    display: grid;
+    max-width: 1023px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+
+  section .produto img {
+    max-width: 300px;
+    height: 300px;
+    margin: 8px;
+  }
+}
